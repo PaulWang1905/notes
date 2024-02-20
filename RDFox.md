@@ -14,3 +14,11 @@
 # RDFox Example: Running Interactively With Persistence
 
 
+    sudo docker run --rm -v /home/<username>/RDFox/RDFox.lic:/opt/RDFox/RDFox.lic \
+        --mount type=bind,source="$(pwd)",target=/home/rdfox/.RDFox \
+        oxfordsemantic/rdfox-init 
+        -persistence file \
+        -request-logger elf \
+        -role admin \
+        -password \
+    
