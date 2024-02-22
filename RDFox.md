@@ -11,7 +11,7 @@
       sudo snap enable docker
   
 
-# RDFox Example: Running Interactively With Persistence
+# Example: Initializing a New Server Directory with a Companion Image.
 
 
     sudo docker run --rm -v /home/<username>/RDFox/RDFox.lic:/opt/RDFox/RDFox.lic \
