@@ -28,8 +28,8 @@
 
 Using volume rdfox-server-directory, prepared as described in the preceding example, a containerized RDFox daemon, reachable at host port <host-port>, can be launched using the following command:
 
-docker run -d --cap-drop ALL -p <host-port>:12110 \
-           -v <path-to-license-file>:/opt/RDFox/RDFox.lic \
-           --mount type=bind,source="$(pwd)",target=/home/rdfox/.RDFox \
-           oxfordsemantic/rdfox
-
+    docker run -d --cap-drop ALL -p <host-port>:12110 \
+               -v <path-to-license-file>:/opt/RDFox/RDFox.lic \
+               --mount type=bind,source="$(pwd)",target=/home/rdfox/.RDFox \
+               oxfordsemantic/rdfox
+    
